@@ -133,8 +133,8 @@ const TableSection = () => {
         </div>
         <div className="mt-5 overflow-auto">
           <table className="w-full border-separate border-spacing-y-3 ">
-            <thead className="text-slate-100">
-              <tr className="bg-gray-100 dark:bg-slate-700 rounded-b-2xl ">
+            <thead>
+              <tr className=" dark:bg-slate-700 rounded-b-2xl  bg-slate-200 rounded-2xl  ">
                 <th className="p-3">Order ID</th>
                 <th className="p-3">Customer</th>
                 <th className="p-3">Products</th>
@@ -146,7 +146,10 @@ const TableSection = () => {
             <tbody className="overflow-auto">
               {recentOrder.map(
                 ({ id, customer, products, amount, status, date }) => (
-                  <tr key={id} className="dark:bg-slate-800 text-slate-200">
+                  <tr
+                    key={id}
+                    className="dark:bg-slate-800 dark:text-slate-200"
+                  >
                     <td className="border-b text-center border-gray-100 p-4">
                       {id}
                     </td>
@@ -160,9 +163,9 @@ const TableSection = () => {
                       {amount}
                     </td>
                     <td
-                      className={`border-b text-center border-gray-100  ${getStatusColor(
+                      className={` ${getStatusColor(
                         status
-                      )} rounded-4xl `}
+                      )}  text-center border-gray-100  py-0 px-2  rounded-4xl `}
                     >
                       {status}
                     </td>
