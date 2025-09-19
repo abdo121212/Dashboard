@@ -1,0 +1,9 @@
+const Setting = () => {
+  return (
+    <div className="flex items-center justify-center h-[90vh] text-4xl font-medium">
+      Setting Page
+    </div>
+  );
+};
+
+export default Setting;
