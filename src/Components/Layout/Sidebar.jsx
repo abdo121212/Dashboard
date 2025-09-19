@@ -38,8 +38,8 @@ export default function Sidebar() {
 
       <div className=" p-[18px]  border-slate-200/50  dark:border-slate-700/50 ">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 bg-gradient-to-r  from-blue-600 to-purple-600  rounded-xl flex items-center justify-center shadow-lg ">
-            <Zap className="w-6 h-6  text-white" />
+          <div className="w-9 h-9 bg-gradient-to-r  from-blue-600 to-purple-600  rounded-xl flex items-center justify-center shadow-lg ">
+            <Zap className="w-5 h-5  text-white" />
           </div>
           {isOpen && (
             <div>
@@ -63,13 +63,13 @@ export default function Sidebar() {
 
           <NavLink to={"/"}>
             <div className="flex items-center justify-start space-x-4  dark:text-slate-200  p-3 rounded-xl cursor-pointer">
-              <LayoutDashboard />
+              <LayoutDashboard size={20} />
 
               {isOpen && (
                 <div className="flex  justify-evenly items-center space-x-4">
-                  <h1>Dashboard</h1>
+                  <h1 className="font-medium">Dashboard</h1>
 
-                  <p className=" bg-red-500 rounded-lg px-3 text-sm py-1">
+                  <p className=" bg-red-500 rounded-lg px-3 text-[12px] py-1">
                     New
                   </p>
                 </div>
@@ -86,13 +86,17 @@ export default function Sidebar() {
             className="flex il-sidebar  items-center il-sidebar cursor-pointer justify-between space-x-4 p-3 rounded-xl text-slate-500 transition-all duration-300"
           >
             <div className="flex items-center  space-x-4">
-              <ChartColumnIncreasing />
-              {isOpen && <h1 className="text-lg font-bold">Analytics</h1>}
+              <ChartColumnIncreasing size={20} />
+              {isOpen && <h1 className="font-medium">Analytics</h1>}
             </div>
 
             {isOpen && (
               <div className="flex  justify-evenly items-center space-x-4 ">
-                {analytics ? <ChevronUp /> : <ChevronDown />}
+                {analytics ? (
+                  <ChevronUp size={20} />
+                ) : (
+                  <ChevronDown size={20} />
+                )}
               </div>
             )}
           </NavLink>
@@ -117,8 +121,8 @@ export default function Sidebar() {
               <UserRound />
               {isOpen && (
                 <>
-                  <h1 className="text-lg font-bold">Users</h1>
-                  <p className="text-sm bg-gray-300  rounded-2xl w-10 flex items-center justify-center text-gray-100">
+                  <h1 className="font-medium">Users</h1>
+                  <p className=" bg-gray-300 text-[12px] rounded-2xl w-10 flex items-center justify-center text-slate-800 ">
                     2.4K
                   </p>{" "}
                 </>
@@ -127,7 +131,7 @@ export default function Sidebar() {
 
             {isOpen && (
               <div className="flex  justify-evenly items-center space-x-4 ">
-                {user ? <ChevronUp /> : <ChevronDown />}
+                {user ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
               </div>
             )}
           </NavLink>
@@ -151,12 +155,16 @@ export default function Sidebar() {
           >
             <div className="flex items-center  space-x-4">
               <ShoppingBag />
-              {isOpen && <h1 className="text-lg font-bold">E-commerce</h1>}
+              {isOpen && <h1 className="font-medium"> E-commerce</h1>}
             </div>
 
             {isOpen && (
               <div className="flex  justify-evenly items-center space-x-4 ">
-                {ecommerce ? <ChevronUp /> : <ChevronDown />}
+                {ecommerce ? (
+                  <ChevronUp size={20} />
+                ) : (
+                  <ChevronDown size={20} />
+                )}
               </div>
             )}
           </NavLink>
@@ -173,12 +181,12 @@ export default function Sidebar() {
 
           <NavLink to={"/inventory"} className="il-sidebar">
             <div className="flex items-center  space-x-4">
-              <SquareActivity />
+              <SquareActivity size={20} />
               {isOpen && (
                 <>
-                  <h1 className="text-lg font-bold ">inventory</h1>
+                  <h1 className="font-medium">inventory</h1>
 
-                  <p className="text-sm bg-gray-300  rounded-2xl w-10 flex items-center justify-center text-gray-100">
+                  <p className="text-sm bg-gray-300  rounded-2xl w-10 flex items-center justify-center text-slate-800">
                     847
                   </p>
                 </>
@@ -189,9 +197,9 @@ export default function Sidebar() {
 
           <NavLink to={"/transactions"} className="il-sidebar ">
             <div className="flex items-center  space-x-4">
-              <ArrowLeftRight />
+              <ArrowLeftRight size={20} />
 
-              {isOpen && <h1 className="text-lg font-bold">Transactions</h1>}
+              {isOpen && <h1 className="font-medium">Transactions</h1>}
             </div>
           </NavLink>
 
@@ -199,11 +207,11 @@ export default function Sidebar() {
 
           <NavLink to={"/message"} className="il-sidebar ">
             <div className="flex items-center  space-x-4">
-              <MessageSquare />
+              <MessageSquare size={20} />
               {isOpen && (
                 <>
-                  <h1 className="text-lg font-bold">Message</h1>
-                  <p className="text-sm bg-red-600  rounded-full w-6 h-6 text-white flex items-center justify-center">
+                  <h1 className="font-medium">Message</h1>
+                  <p className="text-[12px] bg-red-600  rounded-full w-5 h-5 text-white flex items-center justify-center">
                     12
                   </p>{" "}
                 </>
@@ -215,9 +223,9 @@ export default function Sidebar() {
 
           <NavLink to={"/calender"} className="il-sidebar ">
             <div className="flex items-center  space-x-4">
-              <Calendar />
+              <Calendar size={20} />
 
-              {isOpen && <h1 className="text-lg font-bold">Calender</h1>}
+              {isOpen && <h1 className="font-medium">Calender</h1>}
             </div>
           </NavLink>
 
@@ -225,9 +233,9 @@ export default function Sidebar() {
 
           <NavLink to={"/report"} className="il-sidebar">
             <div className="flex items-center  space-x-4">
-              <FileText />
+              <FileText size={20} />
 
-              {isOpen && <h1 className="text-lg font-bold">Report</h1>}
+              {isOpen && <h1 className="font-medium">Report</h1>}
             </div>
           </NavLink>
 
@@ -235,9 +243,9 @@ export default function Sidebar() {
 
           <NavLink to={"setting"} className="il-sidebar ">
             <div className="flex items-center  space-x-4">
-              <Settings />
+              <Settings size={20} />
 
-              {isOpen && <h1 className="text-lg font-bold">Setting</h1>}
+              {isOpen && <h1 className="font-medium">Setting</h1>}
             </div>
           </NavLink>
         </div>

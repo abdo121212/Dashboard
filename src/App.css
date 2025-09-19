@@ -16,7 +16,7 @@
 }
 
 .il-analytics {
-  @apply w-full text-center p-2 rounded-2xl text-lg font-medium bg-gray-100 hover:bg-gray-400 hover:text-slate-100 duration-300  dark:bg-slate-800 dark:text-slate-100;
+  @apply w-full text-center p-2 rounded-2xl  font-medium bg-gray-100 hover:bg-gray-400 hover:text-slate-100 duration-300  dark:bg-slate-800 dark:text-slate-100;
 }
 
 .il-sidebar {

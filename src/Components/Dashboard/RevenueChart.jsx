@@ -32,10 +32,10 @@ const RevenueChart = () => {
         <div className="p-5">
           <div className="flex justify-between ">
             <div className="sm:text-sm lg:text-lg">
-              <h1 className="text-lg font-medium dark:text-slate-100">
+              <h1 className=" font-medium dark:text-slate-100">
                 Revenue Chart
               </h1>
-              <p className="text-slate-600 dark:text-slate-100">
+              <p className="text-slate-600 text-sm dark:text-slate-100">
                 Monthly revenue and expenses
               </p>
             </div>
@@ -46,15 +46,11 @@ const RevenueChart = () => {
                   className={`w-3 h-3
                    bg-[#7a41eb]  rounded-full`}
                 ></div>
-                <div className="text-lg font-[500] dark:text-slate-100">
-                  Revenue
-                </div>
+                <div className=" dark:text-slate-100">Revenue</div>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-[#999] rounded-full"></div>
-                <div className="text-lg font-[500] dark:text-slate-100">
-                  Expenses
-                </div>
+                <div className=" dark:text-slate-100">Expenses</div>
               </div>
             </div>
           </div>

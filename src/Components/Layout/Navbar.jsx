@@ -31,10 +31,10 @@ export default function Navbar() {
           </button>
 
           <div className="hidden lg:block">
-            <h1 className="text-2xl font-bold text-slate-700 dark:text-white">
+            <h1 className="text-xl font-medium text-slate-700 dark:text-white">
               Dashboard
             </h1>
-            <p className="text-sm text-slate-600 dark:text-slate-200">
+            <p className=" text-slate-600 dark:text-slate-400 font-serif text-[12px]">
               Welcome back , Alex ! here's what's happening today .
             </p>
           </div>
@@ -57,8 +57,8 @@ export default function Navbar() {
 
         <div className="  items-center justify-center space-x-3  lg:flex hidden">
           <button className=" flex items-center justify-center bg-gradient-to-r cursor-pointer from-blue-500  to-purple-600 space-x-2 py-2 px-4 text-white rounded-xl hover:shadow-2xl transition-all">
-            <Plus className="w-6 h-6  " />
-            <span className="text-lg font-medium">New</span>
+            <Plus className="w-4 h-4  " />
+            <span className=" text-sm font-medium">New</span>
           </button>
 
           <button
@@ -68,21 +68,21 @@ export default function Navbar() {
             className=" flex items-center justify-center   dark:stroke-slate-200  cursor-pointer text-slate-600 rounded-xl hover:shadow-2xl transition-all"
           >
             {darkMode ? (
-              <Sun className="w-6 h-6 " />
+              <Sun className="w-5 h-5  dark:text-slate-200" />
             ) : (
-              <Moon className="w-6 h-6 " />
+              <Moon className="w-5 h-5  dark:text-slate-200" />
             )}
           </button>
 
           <button className=" relative  flex items-center justify-center  dark:stroke-slate-200  cursor-pointer text-slate-600 rounded-xl hover:shadow-2xl transition-all">
-            <Bell className="w-6 h-6 " />
+            <Bell className="w-5 h-5  dark:text-slate-200" />
             <span className="absolute -top-2 text-sm w-5 h-5 bg-red-500 text-white rounded-full">
               3
             </span>
           </button>
 
           <button className="flex items-center justify-center dark:stroke-slate-200 cursor-pointer text-slate-600 rounded-xl hover:shadow-2xl transition-all">
-            <Settings className="w-6 h-6 " />
+            <Settings className="w-5 h-5  dark:text-slate-200" />
           </button>
 
           <div className="flex border-l  items-center justify-center space-x-3  border-slate-200/50 dark:border-slate-700/50">
@@ -90,11 +90,11 @@ export default function Navbar() {
               src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg"
               alt="user"
               loading="lazy"
-              className="w-10 h-10 rounded-full ring-2 ring-blue-500 object-fill"
+              className="w-7 h-7 rounded-full ring-2 ring-blue-500 object-fill"
             />
 
             <div className="flex items-center justify-center flex-col">
-              <p className="text-sm font-medium text-slate-800 dark:text-white  truncate">
+              <p className="text-sm  text-slate-800 dark:text-white  ">
                 Abdallah Atef
               </p>
 
