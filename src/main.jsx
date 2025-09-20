@@ -9,18 +9,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { Dashboard } from "./Components/Dashboard/Dashboard.jsx";
-import Setting from "./Components/Setting.jsx";
-import Analytics from "./Components/Analytic.jsx";
-import Calender from "./Components/Calender.jsx";
-
-import Ecommerce from "./Components/Ecommerce.jsx";
-import Inventory from "./Components/Inventory.jsx";
-import Message from "./Components/Message.jsx";
-import Report from "./Components/Report.jsx";
-
-import Transaction from "./Components/Transactions.jsx";
-
-import User from "./Components/User.jsx";
+import Setting from "./Pages/Setting.jsx";
+import Analytics from "./Pages/Analytic.jsx";
+import Calender from "./Pages/Calender.jsx";
+import Ecommerce from "./Pages/Ecommerce.jsx";
+import Inventory from "./Pages/Inventory.jsx";
+import Message from "./Pages/Message.jsx";
+import Report from "./Pages/Report.jsx";
+import Transaction from "./Pages/Transactions.jsx";
+import User from "./Pages/User.jsx";
 
 const router = createBrowserRouter([
   {

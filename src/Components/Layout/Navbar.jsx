@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-4 ">
           <button className="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors duration-200 ">
             <Menu
-              className="w-5 h-5 duration-300 transition-all"
+              className="w-5 h-5 duration-300 transition-all cursor-pointer"
               onClick={() => {
                 toggleMenu();
               }}
@@ -31,7 +31,7 @@ export default function Navbar() {
           </button>
 
           <div className="hidden lg:block">
-            <h1 className="text-xl font-medium text-slate-700 dark:text-white">
+            <h1 className="text-xl font-medium text-transparent bg-gradient-to-r from-blue-700 via-fuchsia-600 to-orange-500 bg-clip-text">
               Dashboard
             </h1>
             <p className=" text-slate-600 dark:text-slate-400 font-serif text-[12px]">
