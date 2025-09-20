@@ -134,7 +134,7 @@ const TableSection = () => {
         <div className="mt-5 overflow-auto">
           <table className="w-full border-separate border-spacing-y-3 ">
             <thead>
-              <tr className=" dark:bg-slate-700 rounded-b-2xl  bg-slate-200 rounded-2xl  ">
+              <tr className=" dark:bg-slate-700 rounded-b-2xl rounded-2xl dark:text-slate-100 ">
                 <th className="p-3">Order ID</th>
                 <th className="p-3">Customer</th>
                 <th className="p-3">Products</th>
