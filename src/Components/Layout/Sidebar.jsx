@@ -16,15 +16,14 @@ import {
 import { useContext, useState } from "react";
 import { MenuContext } from "../../Context/MenuContext";
 import { NavLink } from "react-router-dom";
+import useImage  from "./../../assets/WhatsApp_Image_2024-07-14_at_20.00.12_5f274665_50-min-converted-from-jpg.webp";
 
 export default function Sidebar() {
   const [analytics, setAnalytics] = useState(false);
   const [user, setUser] = useState(false);
   const [ecommerce, setEcommerce] = useState(false);
 
-  console.log("analytics", analytics);
-  console.log("user", user);
-  console.log("ecommerce", ecommerce);
+
 
   const { isOpen } = useContext(MenuContext);
 
@@ -255,7 +254,7 @@ export default function Sidebar() {
 
       <div className="flex  p-4 il-sidebar items-center justify-center space-x-3 border-t border-slate-200/50 dark:border-slate-700/50">
         <img
-          src="https://res.cloudinary.com/ddqzfqu1j/image/upload/v1741307727/WhatsApp_Image_2024-07-14_at_20.00.12_5f274665_wgicry.jpg"
+          src={useImage}
           alt="user"
           loading="lazy"
           className="w-10 h-10 rounded-full ring-2 ring-blue-500 object-cover"

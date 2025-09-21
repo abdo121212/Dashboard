@@ -11,6 +11,7 @@ import {
 import { MenuContext } from "../../Context/MenuContext";
 import { useContext } from "react";
 import { useTheme } from "../../Context/DarkMode";
+import  useImage  from "../../assets/WhatsApp_Image_2024-07-14_at_20.00.12_5f274665_50-min-converted-from-jpg.webp";
 
 export default function Navbar() {
   const { toggleMenu } = useContext(MenuContext);
@@ -87,7 +88,7 @@ export default function Navbar() {
 
           <div className="flex border-l  items-center justify-center space-x-3  border-slate-200/50 dark:border-slate-700/50">
             <img
-              src="https://res.cloudinary.com/ddqzfqu1j/image/upload/v1741307727/WhatsApp_Image_2024-07-14_at_20.00.12_5f274665_wgicry.jpg"
+              src={useImage}
               alt="user"
               loading="lazy"
               className="w-7 h-7 rounded-full ring-2 ring-blue-500 object-cover"
