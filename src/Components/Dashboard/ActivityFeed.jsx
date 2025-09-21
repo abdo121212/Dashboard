@@ -64,9 +64,13 @@ const ActivityFeed = () => {
     <div className="select-none">
       <div className="bg-white dark:bg-slate-900  backdrop-blur-xl rounded-2xl p-6 border  border-slate-200/50 dark:border-slate-700/50 ">
         <div className="space-y-2 border-b border-slate-200 dark:text-slate-200">
-          <h4 className="font-bold  text-lg">Activity Feed</h4>
-          <p className="text-slate-500 font-medium ">Recent System Activity</p>
-          <h5 className="hover:text-blue-600  text-lg duration-300 ">
+          <h4 className="sm:font-bold font-medium  sm:text-lg text-sm">
+            Activity Feed
+          </h4>
+          <p className="text-slate-500 sm:font-medium font-sans  text-[14px] sm:text-sm  ">
+            Recent System Activity
+          </p>
+          <h5 className="hover:text-blue-600  text-lg duration-300  sm:font-medium font-sans  text-[14px] sm:text-sm ">
             View All
           </h5>
           <br />
@@ -81,13 +85,17 @@ const ActivityFeed = () => {
                 <activity.Icon />
               </div>
               <div className="flex space-y-1 flex-col items-start  dark:text-slate-200 ">
-                <h3 className="text-lg font-medium ">{activity.title}</h3>
-                <p className="text-slate-500 dark:text-slate-300">
+                <h3 className=" font-medium sm:font-medium font-sans  text-sm sm:text-lg ">
+                  {activity.title}
+                </h3>
+                <p className="text-slate-500 dark:text-slate-300 sm:font-medium font-sans  text-[12px] sm:text-sm ">
                   {activity.description}
                 </p>
                 <div className="flex space-x-1.5 text-slate-600 dark:text-slate-400">
                   <Timer />
-                  <h4>{activity.time}</h4>
+                  <h4 className="sm:font-medium font-sans  text-[12px] sm:text-sm ">
+                    {activity.time}
+                  </h4>
                 </div>
               </div>
             </div>

@@ -49,7 +49,7 @@ export default function Navbar() {
               className="w-full px-5 py-2 focus:outline-none no-search-cancel bg-slate-100 pl-10 dark:bg-slate-800 border-slate-200 dark:border-slate-800  rounded-lg text-slate-800 dark:text-white placeholder-slate-600  focus:ring-2 focus:ring-blue-400  transition-all"
             />
 
-            <Filter className="w-5 h-5 absolute text-slate-600 dark:text-slate-200 top-1/2  right-2 transform -translate-y-1/2 hover:text-slate-300 dark:hover:bg-slate-600 duration-300 " />
+            <Filter className="w-5 h-5 absolute text-slate-600 dark:text-slate-200 max-md:hidden top-1/2  right-2 transform -translate-y-1/2 hover:text-slate-300 dark:hover:bg-slate-600 duration-300 " />
           </div>
         </div>
 
@@ -87,10 +87,10 @@ export default function Navbar() {
 
           <div className="flex border-l  items-center justify-center space-x-3  border-slate-200/50 dark:border-slate-700/50">
             <img
-              src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg"
+              src="https://res.cloudinary.com/ddqzfqu1j/image/upload/v1741307727/WhatsApp_Image_2024-07-14_at_20.00.12_5f274665_wgicry.jpg"
               alt="user"
               loading="lazy"
-              className="w-7 h-7 rounded-full ring-2 ring-blue-500 object-fill"
+              className="w-7 h-7 rounded-full ring-2 ring-blue-500 object-cover"
             />
 
             <div className="flex items-center justify-center flex-col">

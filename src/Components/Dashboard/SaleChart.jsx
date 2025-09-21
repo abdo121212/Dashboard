@@ -10,8 +10,8 @@ const SaleChart = () => {
   return (
     <div className="bg-white dark:bg-slate-900  backdrop-blur-xl rounded-2xl p-6 border  border-slate-200/50 dark:border-slate-700/50  ">
       <div className="mb-6 ">
-        <h3 className="text-lg font-bold text-slate-800 dark:text-slate-100 ">
-          Sales By category{" "}
+        <h3 className="sm:text-lg sm:font-bold font-medium  text-slate-800 dark:text-slate-100 ">
+          Sales By category
         </h3>
         <p className="text-slate-600 dark:text-slate-300">Production Distrbution</p>
       </div>

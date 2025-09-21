@@ -121,7 +121,7 @@ const TableSection = () => {
       <div className="bg-white dark:bg-slate-800 col-span-3  backdrop-blur-xl rounded-2xl p-6 border  border-slate-200/50 dark:border-slate-700/50  w-full">
         <div className="flex items-center justify-between">
           <div>
-            <h3 className="font-bold text-xl dark:text-slate-100">
+            <h3 className="font-bold text-xl dark:text-slate-100 text-slate-600 max-sm:text-sm">
               Recent Order
             </h3>
             <p className="text-sm text-slate-500 dark:text-slate-100">
@@ -181,21 +181,19 @@ const TableSection = () => {
       </div>
 
       <div
-        className="bg-white dark:bg-slate-900 col-span-3  backdrop-blur-xl rounded-2xl p-6 border  border-slate-200/50 dark:border-slate-700/50  w-full 
-      
-      "
+        className="bg-white dark:bg-slate-900 col-span-3  backdrop-blur-xl rounded-2xl p-6 border  border-slate-200/50 dark:border-slate-700/50  w-full"
       >
         <div className="flex items-center justify-between border-b border-slate-100py-4">
           <div className="space-y-3">
-            <h3 className="font-bold text-lg dark:text-slate-100">
+            <h3 className="sm:font-bold font-medium text-lg dark:text-slate-100">
               Top Products
             </h3>
-            <p className="text-blue-400 text-lg dark:text-slate-200">
+            <p className="text-blue-400 sm:text-lg text-sm dark:text-slate-200">
               View All{" "}
             </p>
           </div>
 
-          <p className="text-slate-400 text-lg dark:text-slate-200">
+          <p className="text-slate-400 sm:text-lg text-sm  dark:text-slate-200">
             Best Performing Products
           </p>
         </div>
@@ -206,13 +204,13 @@ const TableSection = () => {
             className="flex items-center justify-between mt-5 py-4 hover:bg-amber-100 px-5 dark:hover:bg-slate-600 rounded-2xl cursor-pointer"
           >
             <div className="flex space-y-3 flex-col ">
-              <h4 className="text-lg font-medium dark:text-slate-200">
-                {name}{" "}
+              <h4 className="md:text-lg text-md font-medium dark:text-slate-200">
+                {name}
               </h4>
               <p className="text-slate-500 dark:text-slate-300">{sales}$</p>
             </div>
             <div className="flex space-y-3 flex-col items-center">
-              <h4 className="dark:text-slate-200 font-medium text-lg">
+              <h4 className="dark:text-slate-200 font-medium dm:text-lg text-md">
                 {revenue}
               </h4>
               <div className="text-sm ">

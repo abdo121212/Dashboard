@@ -32,7 +32,7 @@ const RevenueChart = () => {
         <div className="p-5">
           <div className="flex justify-between ">
             <div className="sm:text-sm lg:text-lg">
-              <h1 className=" font-medium dark:text-slate-100">
+              <h1 className=" font-normal sm:font-medium dark:text-slate-100 ">
                 Revenue Chart
               </h1>
               <p className="text-slate-600 text-sm dark:text-slate-100">

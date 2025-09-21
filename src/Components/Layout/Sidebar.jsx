@@ -255,10 +255,10 @@ export default function Sidebar() {
 
       <div className="flex  p-4 il-sidebar items-center justify-center space-x-3 border-t border-slate-200/50 dark:border-slate-700/50">
         <img
-          src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg"
+          src="https://res.cloudinary.com/ddqzfqu1j/image/upload/v1741307727/WhatsApp_Image_2024-07-14_at_20.00.12_5f274665_wgicry.jpg"
           alt="user"
           loading="lazy"
-          className="w-10 h-10 rounded-full ring-2 ring-blue-500 object-fill"
+          className="w-10 h-10 rounded-full ring-2 ring-blue-500 object-cover"
         />
 
         {isOpen && (
